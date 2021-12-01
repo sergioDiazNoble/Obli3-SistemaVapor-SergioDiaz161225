@@ -1,0 +1,39 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package greet;
+
+service GameService
+{
+	// Sends a greeting
+	rpc AddGame (AddGameRequest) returns (TextResponseGame);
+	rpc Update (UpdateGameRequest) returns (TextResponseGame);
+	rpc Delete (DeleteGameRequest) returns (TextResponseGame);
+}
+
+// The request message containing the user's name.
+message AddGameRequest
+{
+  string title = 2;
+  string gender = 3;
+  string synopsis = 4;
+}
+
+// The response message containing the greetings.
+message TextResponseGame
+{
+  string message = 1;
+}
+
+message UpdateGameRequest {
+  int32 id = 1;
+  string new_title = 2;
+  string new_gender = 3;
+  string new_synopsis = 4;
+}
+
+message DeleteGameRequest {
+  int32 id = 1;
+}
+

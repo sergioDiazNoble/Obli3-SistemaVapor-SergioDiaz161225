@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IKVM" Version="8.1.5717" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StringProtocolLibrary\StringProtocolLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

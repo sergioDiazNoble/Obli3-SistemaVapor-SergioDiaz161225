@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option csharp_namespace = "ServerAdmin";
+
+package greet;
+
+service UserService {
+  // Sends a greeting
+	rpc AddUser (AddUserRequest) returns (TextResponse);
+	rpc Update (UpdateUserRequest) returns (TextResponse);
+	rpc Delete (DeleteUserRequest) returns (TextResponse);
+}
+
+message AddUserRequest
+{
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message TextResponse
+{
+  string message = 1;
+}
+
+message UpdateUserRequest {
+  int32 id = 1;
+  string new_name = 2;
+}
+
+message DeleteUserRequest {
+  int32 id = 1;
+}
+

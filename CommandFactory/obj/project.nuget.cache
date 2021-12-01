@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "HB1Bc3mqnPkOqWyaUebyyzkfeCARsUFq59z/VkJpQrYLsoZLS7dKdmtEYqls5PQODshqRBd3grJwRoukn6YZ9w==",
+  "success": true,
+  "projectFilePath": "D:\\ProgRedes2\\Obligatorio1ProgRedes\\SistemaVapor\\CommandFactory\\CommandFactory.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sergio\\.nuget\\packages\\ikvm\\8.1.5717\\ikvm.8.1.5717.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"IKVM 8.1.5717\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "IKVM",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
